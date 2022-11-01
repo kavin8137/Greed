@@ -58,7 +58,10 @@ namespace Unit4.Game.Directing
         }
 
         /// <summary>
+        /// Updates the artifact's position.
         /// Updates the robot's position and resolves any collisions with artifacts.
+        /// When collisions are taking place, new score will be updated on the banner.
+        /// After a collision has taken placed, the artifact will be reassign its location.
         /// </summary>
         /// <param name="cast">The given cast.</param>
         private void DoUpdates(Cast cast)
